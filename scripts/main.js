@@ -1,4 +1,3 @@
-
 const app = document.querySelector("#app");
 const delay = ms => new Promise(res => setTimeout(res, ms));
     
@@ -37,13 +36,14 @@ async function open_terminal(){
 
 
 function new_line(){
+  
   const p = document.createElement("p");
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
   p.setAttribute("class", "path")
-  p.textContent = "anonymous";
-  span1.textContent = " @";
-  span2.textContent = " /rudyp.me";
+  p.textContent = "# user";
+  span1.textContent = " in";
+  span2.textContent = " ~/heber-leonard";
   p.appendChild(span1);
   p.appendChild(span2);
   app.appendChild(p);
