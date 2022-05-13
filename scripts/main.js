@@ -25,9 +25,8 @@ async function open_terminal(){
   createText("Starting the server...");
   await delay(1500);
   createText("You can run several commands:");
- 
+  createCode("builds", "See things I have built with coding");
   createCode("about me", "Who am i and what do i do.");
-  createCode("all", "See all commands.");
   createCode("social -a", "All my social networks.");
 
   await delay(500);
@@ -67,7 +66,7 @@ function removeInput(){
 async function getInputValue(){
   
   const value = document.querySelector("input").value;
-  if(value === "all"){
+  if(value === "help"){
     trueValue(value);
     
     createCode("projects", "My github page with my projects. Follow me there ;)");
@@ -78,6 +77,10 @@ async function getInputValue(){
   }
   else if(value === "projects"){
     trueValue(value);
+    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
+
+    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
+
     createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
   }
   else if(value === "about me"){
