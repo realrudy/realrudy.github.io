@@ -41,9 +41,9 @@ function new_line(){
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
   p.setAttribute("class", "path")
-  p.textContent = "# user";
-  span1.textContent = " in";
-  span2.textContent = " ~/heber-leonard";
+  p.textContent = "anonymous";
+  span1.textContent = "@";
+  span2.textContent = "rudyp.me";
   p.appendChild(span1);
   p.appendChild(span2);
   app.appendChild(p);
