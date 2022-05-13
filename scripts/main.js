@@ -37,12 +37,11 @@ async function open_terminal(){
 
 
 function new_line(){
-  let username= prompt("Set a username to start")
   const p = document.createElement("p");
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
   p.setAttribute("class", "path")
-  p.textContent = "username";
+  p.textContent = "anonymous";
   span1.textContent = " @";
   span2.textContent = " /rudyp.me";
   p.appendChild(span1);
