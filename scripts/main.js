@@ -1,41 +1,41 @@
 const app = document.querySelector("#app");
 const delay = ms => new Promise(res => setTimeout(res, ms));
-    
-    
-app.addEventListener("keypress", async function(event){
-  if(event.key === "Enter"){
+
+
+app.addEventListener("keypress", async function (event) {
+  if (event.key === "Enter") {
     await delay(150);
-   getInputValue();
-   
+    getInputValue();
+
     removeInput();
     await delay(150);
     new_line();
   }
 });
 
-app.addEventListener("click", function(event){
+app.addEventListener("click", function (event) {
   const input = document.querySelector("input");
   input.focus();
 })
 
 
-async function open_terminal(){
+async function open_terminal() {
   createText("Welcome");
   await delay(700);
   createText("Starting the server...");
   await delay(1500);
   createText("You can run several commands:");
-  createCode("builds", "See things I have built with coding");
+  createCode("projects", "See things I have built with coding");
   createCode("about me", "Who am i and what do i do.");
-  createCode("social -a", "All my social networks.");
+  createCode("GUI", "Open the non terminal verison of the website");
 
   await delay(500);
   new_line();
 }
 
 
-function new_line(){
-  
+function new_line() {
+
   const p = document.createElement("p");
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
@@ -55,64 +55,62 @@ function new_line(){
   div.appendChild(input);
   app.appendChild(div);
   input.focus();
-  
+
 }
 
-function removeInput(){
+function removeInput() {
   const div = document.querySelector(".type");
   app.removeChild(div);
 }
 
-async function getInputValue(){
-  
+async function getInputValue() {
+
   const value = document.querySelector("input").value;
-  if(value === "help"){
+  if (value === "help") {
     trueValue(value);
-    
+
     createCode("projects", "My github page with my projects. Follow me there ;)");
     createCode("about me", "Who am i and what do i do.");
     createCode("social -a", "All my social networks.");
     createCode("clear", "Clean the terminal.");
-    
-  }
-  else if(value === "projects"){
-    trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
-
-    trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
-    trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
 
   }
-  else if(value === "about me"){
+  else if (value === "projects") {
     trueValue(value);
-    createText("Oi, meu nome é Héber ;)")
-    createText("Desenvolvedor atualmente focado em todo o ecossistema Javascript. Utilizando principalmente a stack <span class='blue'>Node, React e React Native </span>por permitir criar aplicações de forma descomplicada e produtiva.")
+    createText("<a href='https://rudyp.me/gui'><i class='fa-solid fa-code'></i> rudyp.me- GUI verison</a>")
+    createText("<a href='https://github.com/realrudy' target='_blank'><i class='fab fa-github white'></i> github.com/realrudy</a>")
+    createText("<a href='https://shelf.rudyp.me' target='_blank'><i class='fa-solid fa-book-atlas'></i> KMS Shelf Finder</a>")
+
+
   }
-  else if(value === "social -a"){
+  else if (value === "about me") {
+    trueValue(value);
+    createText("I'm Rudy!!)")
+    createText("I'm just a kid who probally codes to many sites and helps his freinds code. I know HTML/Css/Js and a bit of Python.")
+  }
+  else if (value === "social -a") {
     trueValue(value);
     createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
     createText("<a href='https://www.linkedin.com/in/heber-leonard/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/heber-leonard</a>")
     createText("<a href='https://www.instagram.com/heber_leonard/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/heber_leonard</a>")
   }
-  else if(value === "social"){
+  else if (value === "social") {
     trueValue(value);
     createText("Didn't you mean: social -a?")
   }
-  
-  else if(value === "clear"){
+
+  else if (value === "clear") {
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
   }
-  else{
+  else {
     falseValue(value);
     createText(`command not found: ${value}`)
   }
 }
 
-function trueValue(value){
-  
+function trueValue(value) {
+
   const div = document.createElement("section");
   div.setAttribute("class", "type2")
   const i = document.createElement("i");
@@ -125,8 +123,8 @@ function trueValue(value){
   app.appendChild(div);
 }
 
-function falseValue(value){
-  
+function falseValue(value) {
+
   const div = document.createElement("section");
   div.setAttribute("class", "type2")
   const i = document.createElement("i");
@@ -139,20 +137,20 @@ function falseValue(value){
   app.appendChild(div);
 }
 
-function createText(text, classname){
+function createText(text, classname) {
   const p = document.createElement("p");
-  
+
   p.innerHTML =
-  text
-  ;
+    text
+    ;
   app.appendChild(p);
 }
 
-function createCode(code, text){
+function createCode(code, text) {
   const p = document.createElement("p");
   p.setAttribute("class", "code");
   p.innerHTML =
- `${code} <br/><span class='text'> ${text} </span>`;
+    `${code} <br/><span class='text'> ${text} </span>`;
   app.appendChild(p);
 }
 
