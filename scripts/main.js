@@ -71,7 +71,7 @@ async function getInputValue() {
 
     createCode("projects", "My github page with my projects. Follow me there ;)");
     createCode("about me", "Who am i and what do i do.");
-    createCode("social -a", "All my social networks.");
+    createCode("gui", "open GUI verison of website");
     createCode("clear", "Clean the terminal.");
 
   }
@@ -82,22 +82,16 @@ async function getInputValue() {
     createText("<a href='https://shelf.rudyp.me' target='_blank'><i class='fa-solid fa-book-atlas'></i> KMS Shelf Finder</a>")
 
 
+  }  else if (value === "gui") {
+window.location.replace('https://rudyp.me/gui')
+
   }
   else if (value === "about me") {
     trueValue(value);
     createText("I'm Rudy!!)")
     createText("I'm just a kid who probally codes to many sites and helps his freinds code. I know HTML/Css/Js and a bit of Python.")
   }
-  else if (value === "social -a") {
-    trueValue(value);
-    createText("<a href='https://github.com/heberleonard2' target='_blank'><i class='fab fa-github white'></i> github.com/heberleonard2</a>")
-    createText("<a href='https://www.linkedin.com/in/heber-leonard/' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/heber-leonard</a>")
-    createText("<a href='https://www.instagram.com/heber_leonard/' target='_blank'><i class='fab fa-instagram white'></i> instagram.com/heber_leonard</a>")
-  }
-  else if (value === "social") {
-    trueValue(value);
-    createText("Didn't you mean: social -a?")
-  }
+
 
   else if (value === "clear") {
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
@@ -106,6 +100,7 @@ async function getInputValue() {
   else {
     falseValue(value);
     createText(`command not found: ${value}`)
+    createText('Run the command: "help" for help.')
   }
 }
 
