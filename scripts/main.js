@@ -1,6 +1,7 @@
 const app = document.querySelector("#app");
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
-
+var y = document.getElementById("contain2");
+      y.style.display = "none";
 app.addEventListener("keypress", async function (event) {
   if (event.key === "Enter") {
     await delay(150);
@@ -88,7 +89,8 @@ async function getInputValue() {
       createText("Loading %%%%%.");
       var x = document.getElementById("contain");
       x.style.display = "none";
-
+      var y = document.getElementById("contain2");
+      y.style.display = "";
   
 
   } else if (value === "about me") {
