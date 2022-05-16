@@ -84,15 +84,12 @@ async function getInputValue() {
   } else if (value === "gui") {
     trueValue(value);
     createText("Loading %%....");
-    setTimeout(() => {
       createText("Loading%%%..");
-    }, 1000);
-    setTimeout(() => {
       createText("Loading %%%%%.");
       var x = document.getElementById("contain");
       x.style.display = "none";
 
-    }, 3000);
+  
 
   } else if (value === "about me") {
     trueValue(value);
