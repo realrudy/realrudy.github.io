@@ -1,7 +1,6 @@
 const app = document.querySelector("#app");
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
-var y = document.getElementById("contain2");
-      y.style.display = "none";
+
 app.addEventListener("keypress", async function (event) {
   if (event.key === "Enter") {
     await delay(150);
@@ -85,7 +84,7 @@ async function getInputValue() {
   } else if (value === "gui") {
     trueValue(value);
     createText("Loading %%....");
-      createText("Loading%%%..");
+      createText("Loading %%%..");
       createText("Loading %%%%%.");
       var x = document.getElementById("contain");
       x.style.display = "none";
