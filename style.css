@@ -66,12 +66,16 @@ a img {
 
 /* 1f2937 */
 
-.card{
-    padding: 10px 32px;
-    width: 30%;
-    border: 2px solid  #1f2937;
-    border-radius: 15px;
+.card {
+  padding: 10px 32px;
+  width: 30%;
+  border: 2px solid #1f2937;
+  border-radius: 15px;
 }
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
+}
+a{
+  color:#58a6da;
+  text-decoration: none;
 }
