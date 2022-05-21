@@ -1,39 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap"
-   rel="stylesheet">
-  <link href="styles/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
-  <title>Rudyp.me</title>
-  <style>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    body{
-        background-color: #22272e;
-    }
-</style>
+    <title>Rudyp.me</title>
+    <link rel="stylesheet" href="./style.css" />
+    <ul>
+      <li><a class="active" href="/">/Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </head>
+  <body>
+    <div class="test">
+      <h1 class="text">Hi I'm <span class="gradient">Rudy. </span></h1>
+      <p class="text">
+        14 year old <b>coder</b> and <b>student</b> from the US.
+      </p>
+      <div class="clock">
+        <i class="fa-solid fa-clock"></i> <span class="clock-time"></span>
+        <span class="clock-ampm"></span>
 
-<script src="https://kit.fontawesome.com/19e1b3c1b9.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="container">
-    <div class="menu">
-      <div class="buttons-flex">
-      <div class="button red"></div>
-      <div class="button yellow"></div>
-      <div class="button green"></div>
+        <span id="date"></span><br />
+        <br />
+        <i class="fa-solid fa-school"></i> <span id="countdown"></span>
+        <b>days left of school</b>
+      </div>
+      <div></div>
     </div>
-    <div class="title">
-      <a href="https://rudyp.me" target="_blank"><h1><i class='fab fa-github'></i> RudyP.me</h1></a>
-    </div>
-    </div>
-    <div id="app">
-    </div>
-  </div>
-
-  <script src="scripts/main.js"></script>  
-</body>
+  </body>
+  <script src="./s.js" defer></script>
+  <script
+    src="https://kit.fontawesome.com/19e1b3c1b9.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
-<!-- test -->
