@@ -1,48 +1,62 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Rudyp.me</title>
     <link rel="stylesheet" href="../style.css" />
     <ul>
-      <li><a  href="/">Home</a></li>
-      <li><a  href="/about">About</a></li>
-      <li><a  href="/projects">Projects</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/projects">Projects</a></li>
       <li><a class="active" href="/blog">/Blog</a></li>
     </ul>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "305ff86c-24b6-4fa8-8cfb-507bb76bcd4e",
-    });
-  });
-</script>
+    <script
+      src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
+      async=""
+    ></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function () {
+        OneSignal.init({
+          appId: "305ff86c-24b6-4fa8-8cfb-507bb76bcd4e",
+        });
+      });
+    </script>
   </head>
-<body>
-    
- 
-  
-
-    
+  <body>
     <div class="test">
       <h1 class="text">My <span class="gradient">Blog </span></h1>
-       
- 
-<div class="card">
-    <h1>Coming Soon!</h1>
-</div>
- <br><br>
-  
-End of blog.  </div>
 
-  
+      <div id="loader" class="flex loader">
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <h1>&nbsp;Loading Content</h1>
+      </div>
+      <br /><br />
 
-</body>
+      <div id="blog">
+        <a href="/1.html" style="text-decoration:none; color:inherit;">
+          <div class="card">
+            <h1>Introduction!</h1>
+          </div></a
+        >
 
-  <script src="./s.js" defer></script>
-  
+        <br /><br />
+        
+      </div>
+    </div>
+  </body>
+
+  <script src="../s.js" defer></script>
+
   <script
     src="https://kit.fontawesome.com/19e1b3c1b9.js"
     crossorigin="anonymous"
