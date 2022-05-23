@@ -210,3 +210,7 @@ a{
   font-weight: 900;
 }
 
+img{
+  border:1px solid white;
+  border-radius:3pt;
+}
