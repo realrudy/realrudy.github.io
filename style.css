@@ -92,25 +92,35 @@ a{
   color:#58a6da;
   text-decoration: none;
 }
-
-.test {
- 
-  top: 0px;
-  left: 0px;
-  animation: fromtop 2s;
+.button{
+  background-color:#1f2937;
+  padding: 8px 16px;
+  font-size:16px;
+  border:0;
+  border-radius: 5px;
+  text-decoration: none;
 }
-
-@keyframes fromtop {
-  from {
-    margin-top: -30%;
-  }
+.button:hover{
+  transition: 0.3s;
+  text-decoration: none;
+  background: #374151;
 }
-
 /* 
 
 
 */
+.newtag{
+  color:white;
+  font-weight: 600;
+  background-color:#d9534f  ;
+  padding: 5px;
+  border-radius: 15px;
+  margin-bottom: 30px;
 
+}
+.newtag:hover{
+  text-decoration: none;
+}
 .lds-roller {
   display: inline-block;
   position: relative;
@@ -199,3 +209,4 @@ a{
 .loader{
   font-weight: 900;
 }
+
