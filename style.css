@@ -112,9 +112,10 @@ a{
 .newtag{
   color:white;
   font-weight: 600;
+  font-size: 13px;
   background-color:#d9534f  ;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: 10px;
   margin-bottom: 30px;
 
 }
