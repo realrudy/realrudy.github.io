@@ -92,6 +92,20 @@ a{
   color:#58a6da;
   text-decoration: none;
 }
+
+.test {
+ 
+  top: 0px;
+  left: 0px;
+  animation: fromtop 2s;
+}
+
+@keyframes fromtop {
+  from {
+    margin-top: -30%;
+  }
+}
+
 /* 
 
 
