@@ -65,11 +65,12 @@ a img {
 }
 
 /* 1f2937 */
-
+#blog {
+  display: grid;
+}
 .card {
   padding: 10px 32px;
   width: 30%;
-  
   border: 2px solid #1f2937;
   border-radius: 15px;
 }
@@ -77,30 +78,29 @@ a img {
   display: flex;
   align-items: center;
 }
-.card:hover{
+.card:hover {
   transition: 0.5s;
-  cursor:pointer;
+  cursor: pointer;
   background-color: white;
-  color:black;
+  color: black;
   border: 2px solid black;
-
 }
 a:hover {
   text-decoration: underline;
 }
-a{
-  color:#58a6da;
+a {
+  color: #58a6da;
   text-decoration: none;
 }
-.button{
-  background-color:#1f2937;
+.button {
+  background-color: #1f2937;
   padding: 8px 16px;
-  font-size:16px;
-  border:0;
+  font-size: 16px;
+  border: 0;
   border-radius: 5px;
   text-decoration: none;
 }
-.button:hover{
+.button:hover {
   transition: 0.3s;
   text-decoration: none;
   background: #374151;
@@ -109,17 +109,16 @@ a{
 
 
 */
-.newtag{
-  color:white;
+.newtag {
+  color: white;
   font-weight: 600;
   font-size: 13px;
-  background-color:#d9534f  ;
+  background-color: #d9534f;
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 30px;
-
 }
-.newtag:hover{
+.newtag:hover {
   text-decoration: none;
 }
 .lds-roller {
@@ -207,11 +206,19 @@ a{
   }
 }
 
-.loader{
+.loader {
   font-weight: 900;
 }
 
-img{
-  border:1px solid white;
-  border-radius:3pt;
+img {
+  border: 1px solid white;
+  border-radius: 3pt;
 }
+
+/* @media only screen and (max-width: 500px){
+ 
+  h1 .text{
+    font-size:10px;
+  }
+  
+} */
