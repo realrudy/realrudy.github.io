@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 body {
-  background-color: #000000;
+  background-color: #0d1117;
   font-family: "Inter", sans-serif;
   color: white;
   margin: 0;
@@ -73,6 +73,7 @@ a img {
   width: 30%;
   border: 2px solid #1f2937;
   border-radius: 15px;
+  text-decoration: none;
 }
 .flex {
   display: flex;
@@ -81,9 +82,8 @@ a img {
 .card:hover {
   transition: 0.5s;
   cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+  transform: scale(1.06);
+
 }
 a:hover {
   text-decoration: underline;
